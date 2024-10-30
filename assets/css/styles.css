@@ -488,7 +488,6 @@ p.download {
     }
 
     & a {
-        color: white;
         text-decoration: underline;
     }
 }
@@ -861,9 +860,9 @@ footer img {
     width: auto !important;
 }
 
-.conteudoHome {
+/* .conteudoHome {
     padding: 0px 18%;
-}
+} */
 
 @media screen and (max-width: 580px) {
     .fundoCapa img {
@@ -1083,7 +1082,7 @@ nav#menuLateral {
     width: 16.667%;
     height: 100vh;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     overflow: auto;
     display: block;
 
@@ -1357,6 +1356,7 @@ a.tituloItem {
     margin: 65px 0px;
     background-color: #35637F;
     font-weight: bold;
+    border-radius: 6px;
 
     & p {
         margin: 0px 0px 18px 0px !important;
@@ -1388,7 +1388,8 @@ a.tituloItem {
 
 .cards .cards-header {
     border-bottom: 1px solid white;
-    height: 110px;
+    display: flex;
+    justify-content: center;
 }
 
 .tabela {

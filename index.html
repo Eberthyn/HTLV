@@ -16,138 +16,290 @@
         h1 {
             font-size: 34px;
         }
+
+        header {
+            padding-bottom: 0px !important;
+
+            & .row {
+                padding: 0px;
+            }
+        }
+
+        #menuLateral {
+            padding-left: 0px !important;
+        }
+
+        .menuHome {
+            position: fixed;
+            border: none;
+            color: white;
+            background-color: #35637F;
+            padding: 0px !important;
+            margin-left: 80%;
+            cursor: pointer;
+            align-items: center;
+            display: flex;
+            height: 42px;
+            z-index: 2;
+        }
+
+        .botaoMenuHome {
+            padding: 5px 15px 5px 15px;
+        }
+
+        .menuLateralHome {
+            padding-left: 8px;
+        }
+
+        @media (min-width: 980px) {
+            .menuLateralHome {
+                display: none;
+            }
+        }
+
+        @media (max-width: 980px) {
+            .menuHome {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1300px) {
+            .menuHome {
+                margin-left: 70%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <!-- Toolbar -->
     <header>
-        <img src="assets/images/home/imgCapa.png" class="img-fluid"
-            alt="Capa do curso de Uma Só Saúde">
+        <img src="assets/images/home/imgCapa.png" class="img-fluid" alt="Capa do curso de Uma Só Saúde">
+        <div class="menuHome">
+            <div class="row">
+                <a class="botaoMenuHome" role="button" data-toggle="modal" data-target="#modalReferencias"><i
+                        class="fas fa-file-alt"></i>Referências</a>
+
+                <a class="botaoMenuHome" data-toggle="modal" data-target="#modalCreditos"><i
+                        class="fas fa-list"></i>Créditos</a>
+            </div>
+
+        </div>
     </header>
 
-    <div class="row centro fundoTexto">
-        <div class="col-md-10 centro">
-            <img src="assets/images/home/imgIntro.png" class="img-fluid" style="max-width: 50%;"
-                alt="Introdução - Uma só saúde"></div>
-                <!-- MARCA DAGUA 
-        <div class="col-md-2 imgFundoTexto">
-            <img class="img-fluid " src="assets/images/home/imgMarca.png">
-        </div>-->
-    </div>
-
-    <!-- Apresentação -->
-    <div class="conteudoHome fundoTexto">
-        <h1 class="text-center" id="apresentacao">Apresentação</h1>
-
-        <p>Estamos enfrentando pandemias, desastres naturais, pobreza, fome e várias crises humanitárias. Para responder
-            a esses desafios do mundo atual, é importante termos a visão de que nós, seres humanos, em diversas partes
-            do mundo estamos conectados. E também estamos interligados com os animais, com os quais compartilhamos um
-            ambiente ou um ecossistema. Assim, diferentes disciplinas juntas podem entender melhor o que está
-            acontecendo e como poderíamos contribuir para ter um mundo melhor.</p>
-
-        <p>Essa é a abordagem de <b>Uma Só Saúde</b> que vamos tratar nesse curso.</p>
-
-        <p>O curso <b>Uma só Saúde</b> é uma iniciativa conjunta de diferentes instituições e profissionais de diversas
-            disciplinas, pensam de forma transdisciplinar para promover a saúde.</p>
-
-        <p>Essa é a primeira parte do Curso. Ela está dividida em dois módulos:</p>
-
-        <p>O primeiro módulo, com quatro aulas, trata de do contexto, definições e exemplos da abordagem Uma Só Saúde.
-        </p>
-
-        <p>No segundo módulo, você vai percorrer cinto aulas para conhecer exemplos sobre implementação da abordagem
-            Uma Só Saúde para melhores resultados em Saúde Pública no Brasil e no mundo.</p>
-
-        <p>Ao final do curso, você tem uma avaliação para emissão do certificado de conclusão.</p>
-
-        <p>Explore as aulas e conteúdo complementar para aprimorar seu conhecimento!</p>
-
-        <p><b>Estamos juntos por Uma Só Saúde no Brasil!</b></p>
-
-        <div class="text-center">
-            <img src="assets/images/home/estruturaCurso.png" class="imagem img-fluid" style="max-width: 85%"
-                alt="Estrutura do Curso">
-        </div>
-
-        <!-- Video 1 -->
-        <div class="row justify-content-center video">
-            <div class="col-md-8">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="" width="640" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                </div>
-                <!-- <small class="text-muted">Crédito: Elaborado pelos autores</small> -->
-            </div>
-        </div>
-
-        <!-- Cards lado a lado -->
-        <div class="row">
-            <div class="col-xl-6 centro">
-                <!-- Card 1 -->
-                <div class="cards">
-                    <div class="cards-header">
-                        <h2>Módulo 1</h2>
-                        <p>Identificar os candidatos à PrEP</p>
-                    </div>
-                    <div class="cards-body">
-                        <p>AULA 1<br>História da visão integrada e as diferentes definições de Uma Só Saúde</p>
-                        <p>AULA 2<br>O Regulamento Sanitário Internacional (RSI)</p>
-                        <p>AULA 3<br>A importância da abordagem de Uma Só Saúde no mundo atual</p>
-                        <p>AULA 4<br>Documentos norteadores em Uma Só Saúde</p>
-                        <!-- Botão Conheça o Curso -->
-                        <div class="row botao bottom-center">
-                            <a href="modulo1/modulo1-introducao.html" class="btn btn-sm" id="botaoConhecer"
-                                role="button" alt="Começar">
-                                <strong>Iniciar Módulo 1</strong>
-                            </a>
+    <div class="row" id="row-main">
+        <!-- Sidebar -->
+        <div class="col-md-2" id="sidebar">
+            <!-- Botão Secundário p/ Recolher Sidebar -->
+            <span class="toggle-sidebar" id="sidebarButton2"><i class="fas fa-bars"></i></span>
+            <nav id="menuLateral">
+                <ul class="listaMenu">
+                    <li>
+                        <div class="row centro">
+                            <img src="assets/images/logos/logoHome.png" class="img-fluid logoMenu"
+                                alt="Logo Campus Virtual">
+                        </div>
+                    </li>
+                    <div class="row menuLateralHome">
+                        <div class="sectionTitle">
+                            <a class="tituloLista" role="button" data-toggle="modal" data-target="#modalReferencias"><i
+                                    class="fas fa-file-alt"></i>Referências</a>
                         </div>
                     </div>
-                </div>
-            </div>
+                    </li>
+                    <li>
+                        <div class="row menuLateralHome">
+                            <div class="sectionTitle">
+                                <a data-toggle="modal" data-target="#modalCreditos" class="tituloLista"><i
+                                        class="fas fa-list"></i>Créditos</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-            <div class="col-xl-6 centro">
-                <!-- Card 2 -->
-                <div class="cards">
-                    <div class="cards-header">
-                        <h2>Módulo 2</h2>
-                        <p>Iniciar a PrEP oral</p>
+        <!-- Apresentação -->
+        <div class="col-md-10" id="content">
+            <div class="conteudo fundoTexto">
+                <div class="row centro fundoTexto">
+                    <div class="col-md-10 centro">
+                        <img src="assets/images/home/imgIntro.png" class="img-fluid"
+                            style="max-width: 50%; padding-top: 50px;" alt="Introdução - Uma só saúde">
                     </div>
-                    <div class="cards-body">
-                        <p>AULA 1<br>Condições para que epidemias aconteçam e a importância da abordagem no
-                            enfrentamento de potenciais ameaças</p>
-                        <p>AULA 2<br>Exemplos de estudos da interface animal-humano-ecossistema em eventos</p>
-                        <p>AULA 3<br>Resistência aos antimicrobianos e a abordagem da Uma Só Saúde</p>
-                        <p>AULA 4<br>Desafios para a implantação de programas e projetos em Uma Só Saúde</p>
-                        <!-- Botão Conheça o Curso -->
-                        <div class="row botao bottom-center">
-                            <a href="modulo2/modulo2-introducao.html" class="btn btn-sm" id="botaoConhecer"
-                                role="button" alt="Começar">
-                                <strong>Iniciar Módulo 2</strong>
-                            </a>
+                    <!-- MARCA DAGUA 
+                <div class="col-md-2 imgFundoTexto">
+                    <img class="img-fluid " src="assets/images/home/imgMarca.png">
+                </div>-->
+                </div>
+
+                <h1 class="text-center" id="apresentacao">Apresentação</h1>
+                <hr style="border: solid 1.5px #35637F; width: 40px; margin-top: -20px; margin-bottom: 40px;">
+
+                <p>Estamos enfrentando pandemias, desastres naturais, pobreza, fome e várias crises humanitárias. Para
+                    responder
+                    a esses desafios do mundo atual, é importante termos a visão de que nós, seres humanos, em diversas
+                    partes
+                    do mundo estamos conectados. E também estamos interligados com os animais, com os quais
+                    compartilhamos
+                    um
+                    ambiente ou um ecossistema. Assim, diferentes disciplinas juntas podem entender melhor o que está
+                    acontecendo e como poderíamos contribuir para ter um mundo melhor.</p>
+
+                <p>Essa é a abordagem de <b>Uma Só Saúde</b> que vamos tratar nesse curso.</p>
+
+                <p>O curso <b>Uma só Saúde</b> é uma iniciativa conjunta de diferentes instituições e profissionais de
+                    diversas
+                    disciplinas, pensam de forma transdisciplinar para promover a saúde.</p>
+
+                <p>Essa é a primeira parte do Curso. Ela está dividida em dois módulos:</p>
+
+                <p>O primeiro módulo, com quatro aulas, trata de do contexto, definições e exemplos da abordagem Uma Só
+                    Saúde.
+                </p>
+
+                <p>No segundo módulo, você vai percorrer cinto aulas para conhecer exemplos sobre implementação da
+                    abordagem
+                    Uma Só Saúde para melhores resultados em Saúde Pública no Brasil e no mundo.</p>
+
+                <p>Ao final do curso, você tem uma avaliação para emissão do certificado de conclusão.</p>
+
+                <p>Explore as aulas e conteúdo complementar para aprimorar seu conhecimento!</p>
+
+                <p><b>Estamos juntos por Uma Só Saúde no Brasil!</b></p>
+
+                <h1 class="text-center" id="apresentacao">Estrutura do Curso</h1>
+                <div class="text-center">
+                    <img src="assets/images/home/estruturaCurso.png" class="imagem img-fluid" style="max-width: 60%"
+                        alt="Estrutura do Curso">
+                </div>
+
+                <!-- Video 1 -->
+                <div class="row justify-content-center video">
+                    <div class="col-md-8">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <h1 class="centro">AQUI VAI UM VÍDEO</h1>
+                            <iframe src="" width="640" height="480" frameborder="0"
+                                allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                        <!-- <small class="text-muted">Crédito: Elaborado pelos autores</small> -->
+                    </div>
+                </div>
+
+                <!-- Cards lado a lado -->
+                <div class="row">
+                    <div class="col-xl-6 centro">
+                        <!-- Card 1 -->
+                        <div class="cards">
+                            <div class="cards-header">
+                                <h2>Módulo 1</h2>
+                            </div>
+                            <div class="cards-body">
+                                <p>AULA 1<br>História da visão integrada e as diferentes definições de Uma Só Saúde</p>
+                                <p>AULA 2<br>O Regulamento Sanitário Internacional (RSI)</p>
+                                <p>AULA 3<br>A importância da abordagem de Uma Só Saúde no mundo atual</p>
+                                <p>AULA 4<br>Documentos norteadores em Uma Só Saúde</p>
+                                <!-- Botão Conheça o Curso -->
+                                <div class="row botao bottom-center">
+                                    <a href="modulo1/modulo1-aula1.html" class="btn btn-sm" id="botaoConhecer"
+                                        role="button" alt="Começar">
+                                        <strong>Iniciar Módulo 1</strong>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="col-xl-6 centro">
+                        <!-- Card 2 -->
+                        <div class="cards">
+                            <div class="cards-header">
+                                <h2>Módulo 2</h2>
+                            </div>
+                            <div class="cards-body">
+                                <p>AULA 1<br>Condições para que epidemias de doenças infecciosas aconteçam</p>
+                                <p>AULA 2<br>Exemplos de estudos da interface animal-humano-ecossistema em eventos de
+                                    potencial epidêmico</p>
+                                <p>AULA 3<br>Exemplos de estudos da interface animal-humano-ecossistema em doenças
+                                    desatendidas e outros evento</p>
+                                <p>AULA 4<br>Resistência aos antimicrobianos e a abordagem Uma Só Saúde</p>
+                                <p>AULA 5<br>Desafios para a implantação de programas e projetos em Uma Só Saúde</p>
+                                <!-- Botão Conheça o Curso -->
+                                <div class="row botao bottom-center">
+                                    <a href="modulo2/modulo2-aula1.html" class="btn btn-sm" id="botaoConhecer"
+                                        role="button" alt="Começar">
+                                        <strong>Iniciar Módulo 2</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
+                <!-- Botão Conheça o Curso -->
+                <div class="row botao">
+                    <a href="modulo1/modulo1-aula1.html" class="btn btn-sm" id="botaoComecar" role="button"
+                        alt="Começar">
+                        <strong>Iniciar o curso</strong>
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <!-- Botão Conheça o Curso -->
-        <div class="row botao">
-            <a href="modulo1/modulo1-aula1.html" class="btn btn-sm" id="botaoComecar" role="button" alt="Começar">
-                <strong>Iniciar o curso</strong>
-            </a>
+
+            <!-- Rodapé -->
+
+            <footer id="rodape">
+                <div class="row-main">
+                    <div class="col-md-12 centro">
+                        <img class="img-fluid centro" src="assets/images/rodape/rodape.png" alt="Rodapé">
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    </div>
-    <!-- Rodapé -->
 
-    <footer id="rodape">
-        <div class="row-main">
-            <div class="col-md-12 centro">
-                <img class="img-fluid centro" src="assets/images/rodape/rodape.png" alt="Rodapé">
+    <!-- Modal Referências -->
+    <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="TituloModalCentralizado">Referências Bibliográficas</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <modal-referencias></modal-referencias>
+                </div>
+                <div class="modal-footer">
+                    <button id="botaoComecar" type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+
+    <!-- Modal Créditos -->
+    <div class="modal fade" id="modalCreditos" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="TituloModalCentralizado">Créditos</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <modal-creditos></modal-creditos>
+                </div>
+                <div class="modal-footer">
+                    <button id="botaoComecar" type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Arquivos JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
