@@ -275,7 +275,7 @@ $(".toggle-sidebar").click(function () {
     })
   };
 
-  /* Navegação flip card com touch*/
+  /* Navegação Carousel card com touch*/
   $(".carousel").carousel({
     interval: false,
     pause: true
@@ -284,6 +284,12 @@ $(".toggle-sidebar").click(function () {
 
   $('.carousel .carousel-inner').on('dragstart', 'a', function () {
     return false;
+  });
+
+   
+  /*Flip Card */
+  $(".flipCard").on("click", function() {
+    $(this).toggleClass('flipped');
   });
 
 }(jQuery);
