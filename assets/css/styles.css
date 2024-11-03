@@ -3,6 +3,7 @@
 @font-face {
     font-family: 'Prelo Book';
     src: url(../fonts/Prelo-Book.ttf) format('truetype');
+    font-family: 'Prelo Bold';
     src: url(../fonts/Prelo-Bold.ttf) format('truetype');
 }
 
@@ -490,6 +491,13 @@ h1,
 h2,
 h3 {
     color: #35637F;
+}
+
+h1,
+h2,
+h3,
+b {
+    font-family: 'Prelo Bold';
 }
 
 h1 {
