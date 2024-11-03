@@ -3,6 +3,7 @@
 @font-face {
     font-family: 'Prelo Book';
     src: url(../fonts/Prelo-Book.ttf) format('truetype');
+    src: url(../fonts/Prelo-Bold.ttf) format('truetype');
 }
 
 body,
