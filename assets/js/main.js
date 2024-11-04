@@ -7,11 +7,10 @@ $(document).ready(function () {
     $("#rodape").addClass("fixaRodape");
     $("#row-main").css("padding-bottom", ($('#rodape').css("height")));
   }
-
   if ($(window).scrollTop() === 0) {
     $("#row-main").css("padding-top", "0%");
-    $("#menuLateral").css("padding-bottom", ($('#menuSuperior').css("height")));
-    $(".menuHome").css("padding-bottom", ($('#menuSuperior').css("height")));
+    $("#menuLateral").css("padding-bottom", ($('header').css("height")));
+    $(".menuHome").css("padding-bottom", ($('header').css("height")));
   } else {
     $("#menuLateral").css("top", 0);
     $(".menuHome").css("top", 0);
@@ -36,7 +35,7 @@ $(window).scroll(function teste() {
     $(".menuHome").css("top", '');
     $("#sidebarButton").css("top", "");
     $("#sidebarButton2").css("top", "");
-    $("#menuLateral").css("padding-bottom", ($('#menuSuperior').css("height")));
+    $("#menuLateral").css("padding-bottom", ($('header').css("height")));
 
   } else {
     $("#menuLateral").css({"top": "0"}, "slow");
@@ -88,7 +87,7 @@ $(window).on('resize', function () {
   }
 
   if ($(window).scrollTop() > 0) {
-    $("#row-main").css("padding-top", ($('#menuSuperior').css("height")));
+    $("#row-main").css("padding-top", ($('header').css("height")));
   }
 
   var win = $(this);
