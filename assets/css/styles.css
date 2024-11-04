@@ -183,7 +183,7 @@ header {
 /*Conteúdo*/
 .conteudo {
     padding: 0% 12% 0% 10% !important;
-    margin: 0% !important;    
+    margin: 0% !important;
     /* min-height: 620px; */
 }
 
@@ -327,6 +327,10 @@ p.download {
 
     h3 {
         padding-left: 2%;
+    }
+
+    .tituloBicolor {
+        margin: 0 0 20px 0 !important;
     }
 
     .video {
@@ -473,7 +477,7 @@ p.download {
     }
 
     & h3 {
-        margin: 0 0 20px 0 !important;
+        margin: 0px !important;
     }
 
     & p {
