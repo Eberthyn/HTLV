@@ -10,10 +10,8 @@ $(document).ready(function () {
   if ($(window).scrollTop() === 0) {
     $("#row-main").css("padding-top", "0%");
     $("#menuLateral").css("padding-bottom", ($('header').css("height")));
-    $(".menuHome").css("padding-bottom", ($('header').css("height")));
   } else {
     $("#menuLateral").css("top", 0);
-    $(".menuHome").css("top", 0);
     $("#sidebarButton").css("top", 0);
     $("#sidebarButton2").css("top", 0);
   }
@@ -31,17 +29,15 @@ $(window).scroll(function teste() {
 
   if ($(window).scrollTop() === 0) {
     $("#row-main").css("padding-top", "0%");
-    $("#menuLateral").css("top", '');
-    $(".menuHome").css("top", '');
-    $("#sidebarButton").css("top", "");
-    $("#sidebarButton2").css("top", "");
+    $("#menuLateral").css({"top": "", "transition": "0.6s"}, "slow");
+    $("#sidebarButton").css({"top": "" , "transition": "0.6s;"});
+    $("#sidebarButton2").css({"top": "" , "transition": "0.6s;"});
     $("#menuLateral").css("padding-bottom", ($('header').css("height")));
 
   } else {
-    $("#menuLateral").css({"top": "0"}, "slow");
-    $(".menuHome").css({"top": "0"}, "slow");
-    $("#sidebarButton").css({"top": "0"}, "slow");
-    $("#sidebarButton2").css({"top": "0"}, "slow");
+    $("#menuLateral").css({ "top": "0", "transition": "0.6s;" }, "slow");
+    $("#sidebarButton").css({ "top": "0", "transition": "0.6s;" }, "slow");
+    $("#sidebarButton2").css({ "top": "0", "transition": "0.6s;" }, "slow");
     $("#menuLateral").css("padding-bottom", "0");
   }
 });
@@ -285,9 +281,9 @@ $(".toggle-sidebar").click(function () {
     return false;
   });
 
-   
+
   /*Flip Card */
-  $(".flipCard").on("click", function() {
+  $(".flipCard").on("click", function () {
     $(this).toggleClass('flipped');
   });
 

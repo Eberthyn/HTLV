@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Uma só Saúde</title>
+    <title>Uma Só Saúde</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
@@ -30,12 +30,12 @@
         }
 
         .menuHome {
-            position: fixed;
+            position: absolute;
             border: none;
             color: white;
             background-color: #35637F;
             padding: 0px !important;
-            margin-left: 80%;
+            margin-left: 66%;
             cursor: pointer;
             align-items: center;
             display: flex;
@@ -63,9 +63,21 @@
             }
         }
 
+        @media (max-width: 1500px) {
+            .menuHome {
+                margin-left: 60%;
+            }
+        }
+
         @media (max-width: 1300px) {
             .menuHome {
-                margin-left: 70%;
+                margin-left: 55%;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .menuHome {
+                margin-left: 45%;
             }
         }
     </style>
@@ -80,10 +92,12 @@
                 <a class="botaoMenuHome" role="button" data-toggle="modal" data-target="#modalReferencias"><i
                         class="fas fa-file-alt"></i>Referências</a>
 
+                <a class="botaoMenuHome" data-toggle="modal" data-target="#modalMaterialComplementar"><i
+                        class="fas fa-book"></i>Material Complementar</a>
+
                 <a class="botaoMenuHome" data-toggle="modal" data-target="#modalCreditos"><i
                         class="fas fa-list"></i>Créditos</a>
             </div>
-
         </div>
     </header>
 
@@ -110,6 +124,14 @@
                     <li>
                         <div class="row menuLateralHome">
                             <div class="sectionTitle">
+                                <a data-toggle="modal" data-target="#modalMaterialComplementar" class="tituloLista"><i
+                                        class="fas fa-book"></i>Material Complementar</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row menuLateralHome">
+                            <div class="sectionTitle">
                                 <a data-toggle="modal" data-target="#modalCreditos" class="tituloLista"><i
                                         class="fas fa-list"></i>Créditos</a>
                             </div>
@@ -125,7 +147,7 @@
                 <div class="row centro fundoTexto">
                     <div class="col-md-10 centro">
                         <img src="assets/images/home/imgIntro.png" class="img-fluid"
-                            style="max-width: 50%; padding-top: 50px;" alt="Introdução - Uma só saúde">
+                            style="max-width: 70%; padding-top: 50px;" alt="Introdução - Uma Só Saúde">
                     </div>
                     <!-- MARCA DAGUA 
                 <div class="col-md-2 imgFundoTexto">
@@ -148,21 +170,19 @@
 
                 <p>Essa é a abordagem de <b>Uma Só Saúde</b> que vamos tratar nesse curso.</p>
 
-                <p>O curso <b>Uma só Saúde</b> é uma iniciativa conjunta de diferentes instituições e profissionais de
+                <p>O curso <b>Uma Só Saúde</b> é uma iniciativa conjunta de diferentes instituições e profissionais de
                     diversas
                     disciplinas, pensam de forma transdisciplinar para promover a saúde.</p>
 
-                <p>Essa é a primeira parte do Curso. Ela está dividida em dois módulos:</p>
+                <p>Esta é a primeira parte do Curso. Ela está dividida em 2 módulos:</p>
 
-                <p>O primeiro módulo, com quatro aulas, trata de do contexto, definições e exemplos da abordagem Uma Só
-                    Saúde.
-                </p>
+                <p>O primeiro módulo, com 4 aulas, trata de do contexto, definições e exemplos da abordagem Uma Só
+                    Saúde.</p>
 
-                <p>No segundo módulo, você vai percorrer cinto aulas para conhecer exemplos sobre implementação da
-                    abordagem
+                <p>No segundo módulo, você vai percorrer 5 aulas para conhecer exemplos sobre implementação da abordagem
                     Uma Só Saúde para melhores resultados em Saúde Pública no Brasil e no mundo.</p>
 
-                <p>Ao final do curso, você tem uma avaliação para emissão do certificado de conclusão.</p>
+                <p>Ao final do curso, há uma avaliação para emissão do certificado de conclusão.</p>
 
                 <p>Explore as aulas e conteúdo complementar para aprimorar seu conhecimento!</p>
 
@@ -195,17 +215,19 @@
                                 <h2>Módulo 1</h2>
                             </div>
                             <div class="cards-body">
-                                <p>AULA 1<br>História da visão integrada e as diferentes definições de Uma Só Saúde</p>
-                                <p>AULA 2<br>O Regulamento Sanitário Internacional (RSI)</p>
-                                <p>AULA 3<br>A importância da abordagem de Uma Só Saúde no mundo atual</p>
-                                <p>AULA 4<br>Documentos norteadores em Uma Só Saúde</p>
-                                <!-- Botão Conheça o Curso -->
-                                <div class="row botao bottom-center">
-                                    <a href="modulo1/modulo1-aula1.html" class="btn btn-sm" id="botaoConhecer"
-                                        role="button" alt="Começar">
-                                        <strong>Iniciar Módulo 1</strong>
-                                    </a>
-                                </div>
+                                <a href="modulo1/modulo1-aula1.html">
+                                    <p>AULA 1<br>História da visão integrada e as diferentes definições de Uma Só Saúde
+                                    </p>
+                                </a>
+                                <a href="modulo1/modulo1-aula2.html">
+                                    <p>AULA 2<br>O Regulamento Sanitário Internacional (RSI)</p>
+                                </a>
+                                <a href="modulo1/modulo1-aula3.html">
+                                    <p>AULA 3<br>A importância da abordagem de Uma Só Saúde no mundo atual</p>
+                                </a>
+                                <a href="modulo1/modulo1-aula4.html">
+                                    <p>AULA 4<br>Documentos norteadores em Uma Só Saúde</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -217,20 +239,24 @@
                                 <h2>Módulo 2</h2>
                             </div>
                             <div class="cards-body">
-                                <p>AULA 1<br>Condições para que epidemias de doenças infecciosas aconteçam</p>
-                                <p>AULA 2<br>Exemplos de estudos da interface animal-humano-ecossistema em eventos de
-                                    potencial epidêmico</p>
-                                <p>AULA 3<br>Exemplos de estudos da interface animal-humano-ecossistema em doenças
-                                    desatendidas e outros evento</p>
-                                <p>AULA 4<br>Resistência aos antimicrobianos e a abordagem Uma Só Saúde</p>
-                                <p>AULA 5<br>Desafios para a implantação de programas e projetos em Uma Só Saúde</p>
-                                <!-- Botão Conheça o Curso -->
-                                <div class="row botao bottom-center">
-                                    <a href="modulo2/modulo2-aula1.html" class="btn btn-sm" id="botaoConhecer"
-                                        role="button" alt="Começar">
-                                        <strong>Iniciar Módulo 2</strong>
-                                    </a>
-                                </div>
+                                <a href="modulo2/modulo2-aula1.html">
+                                    <p>AULA 1<br>Fatores e condições para que epidemias de doenças infecciosas aconteçam</p>
+                                </a>
+                                <a href="modulo2/modulo2-aula2.html">
+                                    <p>AULA 2<br>Exemplos de estudos da interface animal-humano-ecossistema em eventos
+                                        de
+                                        potencial epidêmico</p>
+                                </a>
+                                <a href="modulo2/modulo2-aula3.html">
+                                    <p>AULA 3<br>Exemplos de estudos da interface animal-humano-ecossistema em doenças
+                                        desatendidas e outros evento</p>
+                                </a>
+                                <a href="modulo2/modulo2-aula4.html">
+                                    <p>AULA 4<br>Resistência aos antimicrobianos e a abordagem Uma Só Saúde</p>
+                                </a>
+                                <a href="modulo2/modulo2-aula5.html">
+                                    <p>AULA 5<br>Desafios para a implantação de programas e projetos em Uma Só Saúde</p>
+                                </a>
                             </div>
                         </div>
 
@@ -252,7 +278,7 @@
             <footer id="rodape">
                 <div class="row-main">
                     <div class="col-md-12 centro">
-                        <img class="img-fluid centro" src="assets/images/rodape/rodape.png" alt="Rodapé">
+                        <img class="img-fluid centro" src="assets/images/rodape/rodape.jpg" alt="Rodapé">
                     </div>
                 </div>
             </footer>

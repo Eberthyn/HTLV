@@ -12,33 +12,37 @@ $("input[name=questao1]").on("click", function () {
         });
 
         if (value !== "B1") {
-            $("#feedback1").addClass("resposta-incorreta")
-            $("#feedback1").removeClass("resposta-correta")
+            $("#feedback1").addClass("resposta-incorreta");
+            $("#feedback1").removeClass("resposta-correta");
+            $("input[name=questao1]").css({'background-color': '', 'border': ''});
+            $(this).css({'background-color': '#F8062C'});
         } else {
-            $("#feedback1").removeClass("resposta-incorreta")
-            $("#feedback1").addClass("resposta-correta")
+            $("#feedback1").removeClass("resposta-incorreta");
+            $("#feedback1").addClass("resposta-correta");
+            $("input[name=questao1]").css({'background-color': '', 'border': ''});
+            $(this).css({'background-color': '#0ABC3A'});
         }
 
         if (value === "B1") {
-            $("#B1").addClass("resposta-correta")
-            $("#A1").removeClass("resposta-incorreta")
-            $("#C1").removeClass("resposta-incorreta")
-            $("#D1").removeClass("resposta-incorreta")
+            $("#B1").addClass("resposta-correta");
+            $("#A1").removeClass("resposta-incorreta");
+            $("#C1").removeClass("resposta-incorreta");
+            $("#D1").removeClass("resposta-incorreta");
         } else if (value === "A1") {
-            $("#B1").removeClass("resposta-correta")
-            $("#A1").addClass("resposta-incorreta")
-            $("#C1").removeClass("resposta-incorreta")
-            $("#D1").removeClass("resposta-incorreta")
+            $("#B1").removeClass("resposta-correta");
+            $("#A1").addClass("resposta-incorreta");
+            $("#C1").removeClass("resposta-incorreta");
+            $("#D1").removeClass("resposta-incorreta");
         } else if (value === "C1") {
-            $("#B1").removeClass("resposta-correta")
-            $("#A1").removeClass("resposta-incorreta")
-            $("#C1").addClass("resposta-incorreta")
-            $("#D1").removeClass("resposta-incorreta")
+            $("#B1").removeClass("resposta-correta");
+            $("#A1").removeClass("resposta-incorreta");
+            $("#C1").addClass("resposta-incorreta");
+            $("#D1").removeClass("resposta-incorreta");
         } else if (value === "D1") {
-            $("#B1").removeClass("resposta-correta")
-            $("#A1").removeClass("resposta-incorreta")
-            $("#C1").removeClass("resposta-incorreta")
-            $("#D1").addClass("resposta-incorreta")
+            $("#B1").removeClass("resposta-correta");
+            $("#A1").removeClass("resposta-incorreta");
+            $("#C1").removeClass("resposta-incorreta");
+            $("#D1").addClass("resposta-incorreta");
         }
 
         var mensagem = "";
@@ -65,33 +69,37 @@ $("input[name=questao2]").on("click", function () {
         });
         // Altera cor mensagem da resposta
         if (value !== "A2") {
-            $("#feedback2").addClass("resposta-incorreta")
-            $("#feedback2").removeClass("resposta-correta")
+            $("#feedback2").addClass("resposta-incorreta");
+            $("#feedback2").removeClass("resposta-correta");
+            $("input[name=questao2]").css({'background-color': '', 'border': ''});
+            $(this).css({'background-color': '#F8062C'});
         } else {
-            $("#feedback2").removeClass("resposta-incorreta")
-            $("#feedback2").addClass("resposta-correta")
+            $("#feedback2").removeClass("resposta-incorreta");
+            $("#feedback2").addClass("resposta-correta");
+            $("input[name=questao2]").css({'background-color': '', 'border': ''});
+            $(this).css({'background-color': '#0ABC3A'});
         }
 
         if (value === "A2") {
-            $("#A2").addClass("resposta-correta")
-            $("#B2").removeClass("resposta-incorreta")
-            $("#C2").removeClass("resposta-incorreta")
-            $("#D2").removeClass("resposta-incorreta")
+            $("#A2").addClass("resposta-correta");
+            $("#B2").removeClass("resposta-incorreta");
+            $("#C2").removeClass("resposta-incorreta");
+            $("#D2").removeClass("resposta-incorreta");
         } else if (value === "B2") {
-            $("#A2").removeClass("resposta-correta")
-            $("#B2").addClass("resposta-incorreta")
-            $("#C2").removeClass("resposta-incorreta")
-            $("#D2").removeClass("resposta-incorreta")
+            $("#A2").removeClass("resposta-correta");
+            $("#B2").addClass("resposta-incorreta");
+            $("#C2").removeClass("resposta-incorreta");
+            $("#D2").removeClass("resposta-incorreta");
         } else if (value === "C2") {
-            $("#A2").removeClass("resposta-correta")
-            $("#B2").removeClass("resposta-incorreta")
-            $("#C2").addClass("resposta-incorreta")
-            $("#D2").removeClass("resposta-incorreta")
+            $("#A2").removeClass("resposta-correta");
+            $("#B2").removeClass("resposta-incorreta");
+            $("#C2").addClass("resposta-incorreta");
+            $("#D2").removeClass("resposta-incorreta");
         } else if (value === "D2") {
-            $("#A2").removeClass("resposta-correta")
-            $("#B2").removeClass("resposta-incorreta")
-            $("#C2").removeClass("resposta-incorreta")
-            $("#D2").addClass("resposta-incorreta")
+            $("#A2").removeClass("resposta-correta");
+            $("#B2").removeClass("resposta-incorreta");
+            $("#C2").removeClass("resposta-incorreta");
+            $("#D2").addClass("resposta-incorreta");
         }
 
         var mensagem = "";
@@ -118,33 +126,37 @@ $("input[name=questao3]").on("click", function () {
         });
 
         if (value !== "D3") {
-            $("#feedback3").addClass("resposta-incorreta")
-            $("#feedback3").removeClass("resposta-correta")
+            $("#feedback3").addClass("resposta-incorreta");
+            $("#feedback3").removeClass("resposta-correta");
+            $("input[name=questao3]").css({'background-color': '', 'border': ''});
+            $(this).css({'background-color': '#F8062C'});
         } else {
-            $("#feedback3").removeClass("resposta-incorreta")
-            $("#feedback3").addClass("resposta-correta")
+            $("#feedback3").removeClass("resposta-incorreta");
+            $("#feedback3").addClass("resposta-correta");
+            $("input[name=questao3]").css({'background-color': '', 'border': ''});
+            $(this).css({'background-color': '#0ABC3A'});
         }
 
         if (value === "D3") {
-            $("#A3").removeClass("resposta-incorreta")
-            $("#B3").removeClass("resposta-incorreta")
-            $("#C3").removeClass("resposta-incorreta")
-            $("#D3").addClass("resposta-correta")
+            $("#A3").removeClass("resposta-incorreta");
+            $("#B3").removeClass("resposta-incorreta");
+            $("#C3").removeClass("resposta-incorreta");
+            $("#D3").addClass("resposta-correta");
         } else if (value === "A3") {
-            $("#A3").addClass("resposta-incorreta")
-            $("#B3").removeClass("resposta-incorreta")
-            $("#C3").removeClass("resposta-incorreta")
-            $("#D3").removeClass("resposta-correta")
+            $("#A3").addClass("resposta-incorreta");
+            $("#B3").removeClass("resposta-incorreta");
+            $("#C3").removeClass("resposta-incorreta");
+            $("#D3").removeClass("resposta-correta");
         } else if (value === "B3") {
-            $("#A3").removeClass("resposta-incorreta")
-            $("#B3").addClass("resposta-incorreta")
-            $("#C3").removeClass("resposta-incorreta")
-            $("#D3").removeClass("resposta-correta")
+            $("#A3").removeClass("resposta-incorreta");
+            $("#B3").addClass("resposta-incorreta");
+            $("#C3").removeClass("resposta-incorreta");
+            $("#D3").removeClass("resposta-correta");
         } else if (value === "C3") {
-            $("#A3").removeClass("resposta-incorreta")
-            $("#B3").removeClass("resposta-incorreta")
-            $("#C3").addClass("resposta-incorreta")
-            $("#D3").removeClass("resposta-correta")
+            $("#A3").removeClass("resposta-incorreta");
+            $("#B3").removeClass("resposta-incorreta");
+            $("#C3").addClass("resposta-incorreta");
+            $("#D3").removeClass("resposta-correta");
         }
 
         var mensagem = "";
@@ -171,33 +183,37 @@ $("input[name=questao4]").on("click", function () {
         });
 
         if (value !== "C4") {
-            $("#feedback4").addClass("resposta-incorreta")
-            $("#feedback4").removeClass("resposta-correta")
+            $("#feedback4").addClass("resposta-incorreta");
+            $("#feedback4").removeClass("resposta-correta");
+            $("input[name=questao4]").css({'background-color': '', 'border': ''});
+            $(this).css({'background-color': '#F8062C'});
         } else {
-            $("#feedback4").removeClass("resposta-incorreta")
-            $("#feedback4").addClass("resposta-correta")
+            $("#feedback4").removeClass("resposta-incorreta");
+            $("#feedback4").addClass("resposta-correta");
+            $("input[name=questao4]").css({'background-color': '', 'border': ''});
+            $(this).css({'background-color': '#0ABC3A'});
         }
 
         if (value === "C4") {
-            $("#A4").removeClass("resposta-incorreta")
-            $("#B4").removeClass("resposta-incorreta")
-            $("#C4").addClass("resposta-correta")
-            $("#D4").removeClass("resposta-incorreta")
+            $("#A4").removeClass("resposta-incorreta");
+            $("#B4").removeClass("resposta-incorreta");
+            $("#C4").addClass("resposta-correta");
+            $("#D4").removeClass("resposta-incorreta");
         } else if (value === "A4") {
-            $("#A4").addClass("resposta-incorreta")
-            $("#B4").removeClass("resposta-incorreta")
-            $("#C4").removeClass("resposta-correta")
-            $("#D4").removeClass("resposta-incorreta")
+            $("#A4").addClass("resposta-incorreta");
+            $("#B4").removeClass("resposta-incorreta");
+            $("#C4").removeClass("resposta-correta");
+            $("#D4").removeClass("resposta-incorreta");
         } else if (value === "B4") {
-            $("#A4").removeClass("resposta-incorreta")
-            $("#B4").addClass("resposta-incorreta")
-            $("#C4").removeClass("resposta-correta")
-            $("#D4").removeClass("resposta-incorreta")
+            $("#A4").removeClass("resposta-incorreta");
+            $("#B4").addClass("resposta-incorreta");
+            $("#C4").removeClass("resposta-correta");
+            $("#D4").removeClass("resposta-incorreta");
         } else if (value === "D4") {
-            $("#A4").removeClass("resposta-incorreta")
-            $("#B4").removeClass("resposta-incorreta")
-            $("#C4").removeClass("resposta-correta")
-            $("#D4").addClass("resposta-incorreta")
+            $("#A4").removeClass("resposta-incorreta");
+            $("#B4").removeClass("resposta-incorreta");
+            $("#C4").removeClass("resposta-correta");
+            $("#D4").addClass("resposta-incorreta");
         }
 
         var mensagem = "";
