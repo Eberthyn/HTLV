@@ -536,6 +536,17 @@ a {
     text-decoration: underline;
 }
 
+.botao, .col-xl-6 {
+    a {
+        text-decoration: none;
+    }
+}
+.col-xl-6 {
+    a{
+        color: white;
+    }
+}
+
 p {
     margin-bottom: 30px;
 }
@@ -1007,7 +1018,7 @@ footer img {
 }
 
 .carousel-indicators .active {
-    background-color: #35637F;
+    background-color: #00A8FF;
 }
 
 .carousel-control-next-icon {
@@ -1190,7 +1201,7 @@ a.tituloItem {
 
 .item.active,
 .barraStepper.active {
-    background-color: #3E8E9C;
+    background-color: #00A8FF;
 }
 
 .sectionTitle {
@@ -1310,6 +1321,7 @@ input[type="radio"] {
     border: 1px solid;
     margin-right: 1rem;
     margin-top: 2px;
+    cursor: pointer;
 }
 
 .input-radio input:focus {
