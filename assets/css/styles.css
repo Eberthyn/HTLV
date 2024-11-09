@@ -1018,7 +1018,7 @@ footer img {
 }
 
 .carousel-indicators .active {
-    background-color: #00A8FF;
+    background-color: #7EC6FF;
 }
 
 .carousel-control-next-icon {
@@ -1201,7 +1201,7 @@ a.tituloItem {
 
 .item.active,
 .barraStepper.active {
-    background-color: #00A8FF;
+    background-color: #7EC6FF;
 }
 
 .sectionTitle {
