@@ -2,7 +2,7 @@ class ModalCreditos extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
-		this.shadowRoot.innerHTML  = `
+        this.shadowRoot.innerHTML = `
         <style type="text/css">
             p {
                 margin-bottom: 0px !important;
@@ -20,15 +20,6 @@ class ModalCreditos extends HTMLElement {
 
         <p>Nísia Trindade Lima</p>
         <i>Ministra</i>
-
-        <p>Ethel Leonor Noia Maciel</p>
-        <i>Secretária de Vigilância em Saúde</i>
-
-        <p>Draurio Barreira Cravo Neto</p>
-        <i>Diretor do Departamento de HIV/AIDS, Tuberculose, Hepatites Virais e Infecções Sexualmente Transmissíveis - DATHI</i>
-
-        <p>Artur Olhovetchi Kalichman</p>
-        <i>Coordenador Geral de Vigilância do HIV/AIDS e das Hepatites Virais</i>
 
         <h2>Fundação Oswaldo Cruz – Fiocruz</h2>
 
@@ -62,9 +53,15 @@ class ModalCreditos extends HTMLElement {
         <i>Designer UX/UI</i>
 
         <p>Eberthyn Marques</p>
-        <i>Desenvolvedor</i>
+        <i>Desenvolvedor WEB</i>
 
         <p><b>Recursos Audiovisuais</b></p>
+
+        <p>Cláudia Reis</p>
+        <i>Locução e produção de podcast</i>
+
+        <p>Teo Venerando</p>
+        <i>Producão  e edição de vídeo</i>
 
         <p>Bruno Athaydes</p>
         <i>Edição Audiovisual</i>
@@ -77,7 +74,7 @@ class ModalCreditos extends HTMLElement {
         <p>Natália Rasina</p>
         <i>Audiodescrição</i>
 
-        <p>Maria Angélica Marcondes Drska</p>
+        <p>Flávia Botelho</p>
         <i>Revisão de Português</i>
 
         <p><b>Suporte Técnico de Tecnologia da Informação</b></p>
@@ -96,12 +93,11 @@ class ModalCreditos extends HTMLElement {
 
         <h2>Coordenação Acadêmica</h2>
 
-        <p>Marly Marques da Cruz</p>
-        <i>Pesquisadora em Saúde Pública. Departamento de Endemias Samuel Pessoa (DENSP/ENSP/Fiocruz)<br>
-        Diretora do Acordo de Cooperação entre a ENSP/Fiocruz e os Centros de Controle e Prevenção de Doenças dos Estados Unidos (CDC)</i>
+        <p>Marilia Santini de Oliveira</p>
+        <i>Coordenadora-Geral de Laboratórios de Saúde Pública - Ministério da Saúde</i>
 
-        <p>Vanda Lúcia Cota</p>
-        <i>Vice-Diretora do Acordo de Cooperação entre a ENSP/Fiocruz e o CDC</i>
+        <p>Maria Cristina Schneider</p>
+        <i>Departamento de Saúde Global  da Universidade de Georgetown em Washington, DC, Estados Unidos e colaboradora do Programa de Pós-graduação em Saúde Coletiva do Instituto de Estudos em Saúde Coletiva da Universidade Federal do Rio de Janeiro (IESC/UFRJ)</i>
 
         <h2>Coordenação Técnica</h2>
 
@@ -115,40 +111,27 @@ class ModalCreditos extends HTMLElement {
 
         <h2>Conteudistas</h2>
 
-        <p>Thiago Cherem Morelli</p>
-        <i>Consultor Técnico</i>
+        <p>Marilia Santini de Oliveira</p>
+        <i>Coordenadora-Geral de Laboratórios de Saúde Pública - Ministério da Saúde</i>
 
-        <p>Marihá Camelo de Moura Vasconcelos</p>
-        <i>Analista Técnica de Políticas Sociais</i>
+        <p>Maria Cristina Schneider</p>
+        <i>Departamento de Saúde Global  da Universidade de Georgetown em Washington, DC, Estados Unidos e colaboradora do Programa de Pós-graduação em Saúde Coletiva do Instituto de Estudos em Saúde Coletiva da Universidade Federal do Rio de Janeiro (IESC/UFRJ)</i>
+        
+        <p>Ricardo Moratelli Mendonça da Rocha</p>
+        <i>Fiocruz Mata Atlântica</i>
 
-        <p>Tatianna Meireles Dantas de Alencar</p>
-        <i>Analista Técnica de Políticas Sociais</i>
+        <p>Ricardo Pereira Igreja</p>
+        <i>Departamento de Doenças Infecciosas e Parasitárias - Faculdade de Medicina - Universidade Federal do Rio de Janeiro</i>
 
-        <h2>Revisão Técnica</h2>
+        <p>Marcia Chame</p>
+        <i>Coordenadora do Centro de Informação em Saúde Silvestre e da Plataforma Institucional Biodiversidade e Saúde Silvestre - Pibss/Fiocruz</i>
 
-        <p>Thiago Cherem Morelli</p>
-        <i>Consultor Técnico</i>
+        <p>Mayumi Duarte Wakimoto</p>
+        <i>Instituto Nacional de Infectologia Evandro Chagas - Fiocruz</i>
 
-        <p>Marihá Camelo de Moura Vasconcelos</p>
-        <i>Analista Técnica de Políticas Sociais</i>
+        <p>Carla de Freitas Campos</p>
+        <i>Instituto de Ciência e Tecnologia em Biomodelos - Fiocruz</i>
 
-        <p>Tatianna Meireles Dantas de Alencar</p>
-        <i>Analista Técnica de Políticas Sociais</i>
-
-        <p>Ana Luisa Nepomuceno Silva</p>
-        <i>Consultora Técnica</i>
-
-        <p>Francisco Álisson Paula de França</p>
-        <i>Consultor Técnico</i>
-
-        <p>Beatriz Brittes Kamiensk</p>
-        <i>Consultora Técnica</i>
-
-        <p>Maria Clara Gianna Garcia Ribeiro</p>
-        <i>Consultora Técnica</i>
-
-        <p>Aranaí Guarabyra</p>
-        <i>Consultora Nacional IST/OPAS</i>
 `
     }
 }
