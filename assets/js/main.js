@@ -29,9 +29,9 @@ $(window).scroll(function teste() {
 
   if ($(window).scrollTop() === 0) {
     $("#row-main").css("padding-top", "0%");
-    $("#menuLateral").css({"top": "", "transition": "0.6s"}, "slow");
-    $("#sidebarButton").css({"top": "" , "transition": "0.6s;"});
-    $("#sidebarButton2").css({"top": "" , "transition": "0.6s;"});
+    $("#menuLateral").css({ "top": "", "transition": "0.6s" }, "slow");
+    $("#sidebarButton").css({ "top": "", "transition": "0.6s;" });
+    $("#sidebarButton2").css({ "top": "", "transition": "0.6s;" });
     $("#menuLateral").css("padding-bottom", ($('header').css("height")));
 
   } else {

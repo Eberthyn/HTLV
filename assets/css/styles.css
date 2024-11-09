@@ -536,13 +536,15 @@ a {
     text-decoration: underline;
 }
 
-.botao, .col-xl-6 {
+.botao,
+.col-xl-6 {
     a {
         text-decoration: none;
     }
 }
+
 .col-xl-6 {
-    a{
+    a {
         color: white;
     }
 }
