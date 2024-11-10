@@ -328,10 +328,10 @@ p.download {
 .blocoVerde {
     width: 100%;
     margin-left: 0px !important;
-
+/* 
     h3 {
         padding-left: 2%;
-    }
+    } */
 
     .tituloBicolor {
         margin: 0 0 20px 0 !important;
@@ -443,8 +443,13 @@ p.download {
 .saibaMais,
 .blocoBege,
 .blocoVerde {
-    padding: 24px 12px;
+    padding: 28px 26px;
     color: white;
+
+    & ul {
+        padding: 0;
+        margin: 0;
+    }
 
     .col-md-2 {
         padding: 0 !important;
@@ -455,7 +460,7 @@ p.download {
         padding: 16%;
     }
 
-    .col-md-10 {
+    .col-md-8 {
         padding-right: 12% !important;
     }
 
@@ -576,7 +581,7 @@ p.tituloLista {
 
 .video,
 .imagem {
-    margin: 40px 0 !important;
+    margin: 10px 0 40px 0 !important;
 
     .col-lg-8,
     .col-lg-4,
@@ -1520,4 +1525,10 @@ input[type="radio"] {
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 720px;
+    }
 }
