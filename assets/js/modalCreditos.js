@@ -99,38 +99,28 @@ class ModalCreditos extends HTMLElement {
         <p>Maria Cristina Schneider</p>
         <i>Departamento de Saúde Global  da Universidade de Georgetown em Washington, DC, Estados Unidos e colaboradora do Programa de Pós-graduação em Saúde Coletiva do Instituto de Estudos em Saúde Coletiva da Universidade Federal do Rio de Janeiro (IESC/UFRJ)</i>
 
-        <h2>Coordenação Técnica</h2>
-
-        <p>Tatianna Meireles Dantas de Alencar</p>
-        <i>Analista Técnica de Políticas Sociais - Departamento de HIV/AIDS, Tuberculose, Hepatites Virais e Infecções Sexualmente Transmissíveis - DATHI do Ministério da Saúde</i>
-
-        <h2>Coordenação Pedagógica</h2>
-
-        <p>Ana Luisa Nepomuceno Silva</p>
-        <i>Consultora técnica - Departamento de HIV/AIDS, Tuberculose, Hepatites Virais e Infecções Sexualmente Transmissíveis - DATHI do Ministério da Saúde</i>
-
         <h2>Conteudistas</h2>
+
+        <p>Carla de Freitas Campos</p>
+        <i>Instituto de Ciência e Tecnologia em Biomodelos - Fiocruz</i>
+
+        <p>Marcia Chame</p>
+        <i>Coordenadora do Centro de Informação em Saúde Silvestre e da Plataforma Institucional Biodiversidade e Saúde Silvestre - Pibss/Fiocruz</i>
+        
+        <p>Maria Cristina Schneider</p>
+        <i>Departamento de Saúde Global da Universidade de Georgetown em Washington, DC, Estados Unidos e colaboradora do Programa de Pós-graduação em Saúde Coletiva do Instituto de Estudos em Saúde Coletiva da Universidade Federal do Rio de Janeiro (IESC/UFRJ)</i>
 
         <p>Marilia Santini de Oliveira</p>
         <i>Coordenadora-Geral de Laboratórios de Saúde Pública - Ministério da Saúde</i>
 
-        <p>Maria Cristina Schneider</p>
-        <i>Departamento de Saúde Global  da Universidade de Georgetown em Washington, DC, Estados Unidos e colaboradora do Programa de Pós-graduação em Saúde Coletiva do Instituto de Estudos em Saúde Coletiva da Universidade Federal do Rio de Janeiro (IESC/UFRJ)</i>
-        
+        <p>Mayumi Duarte Wakimoto</p>
+        <i>Instituto Nacional de Infectologia Evandro Chagas - Fiocruz</i>
+
         <p>Ricardo Moratelli Mendonça da Rocha</p>
         <i>Fiocruz Mata Atlântica</i>
 
         <p>Ricardo Pereira Igreja</p>
         <i>Departamento de Doenças Infecciosas e Parasitárias - Faculdade de Medicina - Universidade Federal do Rio de Janeiro</i>
-
-        <p>Marcia Chame</p>
-        <i>Coordenadora do Centro de Informação em Saúde Silvestre e da Plataforma Institucional Biodiversidade e Saúde Silvestre - Pibss/Fiocruz</i>
-
-        <p>Mayumi Duarte Wakimoto</p>
-        <i>Instituto Nacional de Infectologia Evandro Chagas - Fiocruz</i>
-
-        <p>Carla de Freitas Campos</p>
-        <i>Instituto de Ciência e Tecnologia em Biomodelos - Fiocruz</i>
 
 `
     }
