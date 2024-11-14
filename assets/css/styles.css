@@ -552,6 +552,10 @@ a {
     a {
         color: white;
     }
+
+    .cards {
+        min-height: 642px !important;
+    }
 }
 
 p {
