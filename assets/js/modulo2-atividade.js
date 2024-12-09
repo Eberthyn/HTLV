@@ -103,8 +103,8 @@ $("input[name=questao2]").on("click", function () {
         }
 
         var mensagem = "";
-        resposta2 == value ? mensagem = "Excelente! Você acertou a resposta, letra <b>C</b>! Você compreendeu corretamente o conceito de transbordamento zoonótico e sua relevância para a saúde pública. Essa compreensão é vital, especialmente na abordagem de Uma Só Saúde onde as interações entre humanos e animais podem trazer riscos de doenças novas e emergentes." :
-            mensagem = "A resposta correta é a letra <b>C</b>, pois demonstra no conceito de transbordamento zoonótico, envolve a transmissão de patógenos de animais vertebrados para seres humanos. Esta relação entre animais, ambiente e humanos é fundamental para a construção da abordagem Uma Só Saúde.";
+        resposta2 == value ? mensagem = "Excelente! Você acertou a resposta, letra <b>C</b>! Você compreendeu corretamente o conceito de transbordamento zoonótico e sua relevância para a saúde pública. Essa compreensão é vital, especialmente na abordagem de HTLV onde as interações entre humanos e animais podem trazer riscos de doenças novas e emergentes." :
+            mensagem = "A resposta correta é a letra <b>C</b>, pois demonstra no conceito de transbordamento zoonótico, envolve a transmissão de patógenos de animais vertebrados para seres humanos. Esta relação entre animais, ambiente e humanos é fundamental para a construção da abordagem HTLV.";
         $("#mensagem2").html(mensagem);
     } else {
         // esvazia a div de mensagem
@@ -161,7 +161,7 @@ $("input[name=questao3]").on("click", function () {
 
         var mensagem = "";
         resposta3 == value ? mensagem = "Parabéns! A opção <b>C</b> realmente reflete o principal foco dos estudos transdisciplinares na gestão dos acidentes ofídicos, que buscam entender a situação epidemiológica, além dos fatores socioeconômicos e ambientais que influenciam o risco desses acidentes. Essa abordagem integrada permite a elaboração de estratégias mais eficazes de prevenção e tratamento, beneficiando a saúde da população."
-            : mensagem = "Sua resposta não está correta. A alternativa <b>C</b> é a mais adequada, pois aborda diretamente o objetivo dos estudos transdisciplinares sobre acidentes ofídicos, que visa analisar a situação epidemiológica e os fatores de risco associados. As outras opções não abordam o foco do estudo, como desenvolver vacinas ou analisar comportamentos que não são centrais para o problema discutido. Sugiro rever o texto, especialmente onde tratamos da transdisciplinaridade e o conceito de Uma Só Saúde, para uma melhor compreensão desse tema.";
+            : mensagem = "Sua resposta não está correta. A alternativa <b>C</b> é a mais adequada, pois aborda diretamente o objetivo dos estudos transdisciplinares sobre acidentes ofídicos, que visa analisar a situação epidemiológica e os fatores de risco associados. As outras opções não abordam o foco do estudo, como desenvolver vacinas ou analisar comportamentos que não são centrais para o problema discutido. Sugiro rever o texto, especialmente onde tratamos da transdisciplinaridade e o conceito de HTLV, para uma melhor compreensão desse tema.";
         $("#mensagem3").html(mensagem);
     } else {
         // esvazia a div de mensagem
@@ -277,7 +277,7 @@ $("input[name=questao5]").on("click", function () {
 
         var mensagem = "";
         resposta5 == value ? mensagem = "Parabéns! A resposta correta é a letra <b>D</b>. Estabelecer equipes transdisciplinares é uma estratégia essencial, pois permite uma compreensão mais profunda dos fatores que afetam a saúde em diferentes contextos."
-            : mensagem = "A resposta adequada para essa questão é a letra <b>D</b> Ignorar a comunicação de riscos e focar apenas no tratamento de doenças, planejar ações isoladas e reduzir a produção de evidências científicas não contribui para o propósito de Uma Só Saúde, que requer colaboração e troca de informações.";
+            : mensagem = "A resposta adequada para essa questão é a letra <b>D</b> Ignorar a comunicação de riscos e focar apenas no tratamento de doenças, planejar ações isoladas e reduzir a produção de evidências científicas não contribui para o propósito de HTLV, que requer colaboração e troca de informações.";
         $("#mensagem5").html(mensagem);
     } else {
         // esvazia a div de mensagem
