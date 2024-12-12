@@ -11,7 +11,7 @@ body,
 header,
 footer {
     font-family: 'Prelo Book', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: 1px;
 }
 
@@ -730,7 +730,7 @@ ul li {
 ol li::marker {
     color: #7F0C21;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .icon {
@@ -1054,7 +1054,7 @@ footer img {
     margin-bottom: 75px;
 
     & p {
-        font-size: 16px;
+        font-size: 17px;
         font-weight: bold;
     }
 }
@@ -1114,7 +1114,7 @@ footer img {
 
 /* barra */
 .barraStepperConteudo {
-    background-color: #EF855D;
+    background-color: #7F0C21;
     width: 3.5px;
     margin-left: -14px;
 }
@@ -1125,7 +1125,7 @@ footer img {
 }
 
 .itemConteudo {
-    border: solid 3.5px #EF855D;
+    border: solid 3.5px #7F0C21;
     background-color: white;
     border-radius: 100%;
     width: 25px;
@@ -1139,7 +1139,7 @@ span.tituloItemConteudo {
     padding-left: 20px;
 
     & b {
-        color: #EF855D;
+        color: #7F0C21;
     }
 }
 
