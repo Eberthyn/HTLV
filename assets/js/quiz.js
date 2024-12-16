@@ -1,4 +1,4 @@
-// MÓDULO 1 QUESTÃO 1
+// QUESTÃO 1
 var resposta = "C1"; // Resposta correta
 $("input[name=questao1]").on("click", function () {
     var value = "";
@@ -56,19 +56,8 @@ $("input[name=questao1]").on("click", function () {
         }
 
         var mensagem = "";
-
-        if (resposta == value) {
-            mensagem = "Correta. Estima-se que entre 800 mil e 2,5 milhões de pessoas vivam com HTLV no Brasil, tornando o país o com maior número de casos no mundo."
-        } else if (value == "A1") {
-            mensagem = "Falsa. O Brasil tem a maior taxa de prevalência global de HTLV, com os dados mais altos na região Nordeste do país, não na região Sul."
-        } else if (value == "B1") {
-            mensagem = "Falsa. A prevalência de HTLV na região Sul é muito baixa, com uma taxa de apenas 0,04%, enquanto a região Nordeste, como a Bahia, pode ter uma taxa de até 1,8%."
-        } else if (value == "D1") {
-            mensagem = "Falsa. A triagem para infecção pelo HTLV em doadores de sangue tornou-se obrigatória a partir de 1993, não de 1983."
-        } else if (value == "E1") {
-            mensagem = "Falsa. A maioria dos dados de prevalência do HTLV é obtida em bancos de sangue, o que pode levar a uma subestimação dos números devido à natureza da triagem e à exclusão de grupos não representados nesses bancos."
-        }
-
+        resposta == value ? mensagem = "A triagem CLIA positiva indica a presença de anticorpos contra HTLV. O Western Blotting indeterminado não fornece uma confirmação clara, mas a PCR positiva para HTLV-2 confirma a presença do material genético do HTLV-2. Assim, a interpretação final é positiva para HTLV-2."
+            : mensagem = "Resposta incorreta.";
         $("#mensagem1").html(mensagem);
     } else {
         // esvazia a div de mensagem
@@ -76,8 +65,8 @@ $("input[name=questao1]").on("click", function () {
     }
 });
 
-// MÓDULO 1 QUESTÃO 2
-var resposta2 = "E2"; // Resposta correta
+// QUESTÃO 2
+var resposta2 = "C2"; // Resposta correta
 $("input[name=questao2]").on("click", function () {
     var value = "";
     // seleciona apenas o que foi checado
@@ -89,7 +78,7 @@ $("input[name=questao2]").on("click", function () {
             value += $(this).val();
         });
         // Altera cor mensagem da resposta
-        if (value !== "E2") {
+        if (value !== "C2") {
             $("#feedback2").addClass("resposta-incorreta");
             $("#feedback2").removeClass("resposta-correta");
             $("input[name=questao2]").css({ 'background-color': '', 'border': '' });
@@ -104,49 +93,38 @@ $("input[name=questao2]").on("click", function () {
         if (value === "C2") {
             $("#A2").removeClass("resposta-incorreta");
             $("#B2").removeClass("resposta-incorreta");
-            $("#C2").addClass("resposta-incorreta");
+            $("#C2").addClass("resposta-correta");
             $("#D2").removeClass("resposta-incorreta");
-            $("#E2").removeClass("resposta-correta");
+            $("#E2").removeClass("resposta-incorreta");
         } else if (value === "A2") {
             $("#A2").addClass("resposta-incorreta");
             $("#B2").removeClass("resposta-incorreta");
             $("#C2").removeClass("resposta-correta");
             $("#D2").removeClass("resposta-incorreta");
-            $("#E2").removeClass("resposta-correta");
+            $("#E2").removeClass("resposta-incorreta");
         } else if (value === "B2") {
             $("#A2").removeClass("resposta-incorreta");
             $("#B2").addClass("resposta-incorreta");
             $("#C2").removeClass("resposta-correta");
             $("#D2").removeClass("resposta-incorreta");
-            $("#E2").removeClass("resposta-correta");
+            $("#E2").removeClass("resposta-incorreta");
         } else if (value === "D2") {
             $("#A2").removeClass("resposta-incorreta");
             $("#B2").removeClass("resposta-incorreta");
-            $("#C2").removeClass("resposta-incorreta");
+            $("#C2").removeClass("resposta-correta");
             $("#D2").addClass("resposta-incorreta");
-            $("#E2").removeClass("resposta-correta");
+            $("#E2").removeClass("resposta-incorreta");
         } else if (value === "E2") {
             $("#A2").removeClass("resposta-incorreta");
             $("#B2").removeClass("resposta-incorreta");
-            $("#C2").removeClass("resposta-incorreta");
+            $("#C2").removeClass("resposta-correta");
             $("#D2").removeClass("resposta-incorreta");
-            $("#E2").addClass("resposta-correta");
+            $("#E2").addClass("resposta-incorreta");
         }
 
         var mensagem = "";
-
-        if (resposta2 == value) {
-            mensagem = "Correta. O texto indica que o HTLV-1 pode ser transmitido verticalmente, da mãe para o filho."
-        } else if (value == "A2") {
-            mensagem = "Falsa. O HTLV-1 compartilha vias de transmissão com diversos patógenos, incluindo ISTs e doenças transmitidas pelo sangue."
-        } else if (value == "B2") {
-            mensagem = "Falsa. O HTLV-1 infecta principalmente os linfócitos T CD4+, não os linfócitos B."
-        } else if (value == "C2") {
-            mensagem = "Falsa. O HTLV-1 está associado a infecções sexualmente transmissíveis (ISTs), conforme mencionado no texto."
-        } else if (value == "D2") {
-            mensagem = "Falsa. A infecção pelo HTLV-1 resulta em uma infecção crônica e persistente, não uma infecção aguda e autolimitada."
-        }
-
+        resposta2 == value ? mensagem = "A triagem CLIA positiva indica a presença de anticorpos contra HTLV. A presença das proteínas p19, p24, GD 21 e rgp46-I no Western Blotting, combinada com a PCR positiva para HTLV-1, confirma a infecção por HTLV-1. Portanto, a interpretação final é positiva para HTLV-1." :
+            mensagem = "Resposta incorreta.";
         $("#mensagem2").html(mensagem);
     } else {
         // esvazia a div de mensagem
@@ -154,8 +132,8 @@ $("input[name=questao2]").on("click", function () {
     }
 });
 
-// MÓDULO 1 QUESTÃO 3
-var resposta3 = "A3"; // Resposta correta
+// QUESTÃO 3
+var resposta3 = "B3"; // Resposta correta
 $("input[name=questao3]").on("click", function () {
     var value = "";
     // seleciona apenas o que foi checado
@@ -167,7 +145,7 @@ $("input[name=questao3]").on("click", function () {
             value += $(this).val();
         });
         // Altera cor mensagem da resposta
-        if (value !== "A3") {
+        if (value !== "B3") {
             $("#feedback3").addClass("resposta-incorreta");
             $("#feedback3").removeClass("resposta-correta");
             $("input[name=questao3]").css({ 'background-color': '', 'border': '' });
@@ -180,51 +158,40 @@ $("input[name=questao3]").on("click", function () {
         }
 
         if (value === "C3") {
-            $("#A3").removeClass("resposta-correta");
-            $("#B3").removeClass("resposta-incorreta");
+            $("#A3").removeClass("resposta-incorreta");
+            $("#B3").removeClass("resposta-correta");
             $("#C3").addClass("resposta-incorreta");
             $("#D3").removeClass("resposta-incorreta");
             $("#E3").removeClass("resposta-incorreta");
         } else if (value === "A3") {
-            $("#A3").addClass("resposta-correta");
-            $("#B3").removeClass("resposta-incorreta");
+            $("#A3").addClass("resposta-incorreta");
+            $("#B3").removeClass("resposta-correta");
             $("#C3").removeClass("resposta-incorreta");
             $("#D3").removeClass("resposta-incorreta");
             $("#E3").removeClass("resposta-incorreta");
         } else if (value === "B3") {
-            $("#A3").removeClass("resposta-correta");
-            $("#B3").addClass("resposta-incorreta");
+            $("#A3").removeClass("resposta-incorreta");
+            $("#B3").addClass("resposta-correta");
             $("#C3").removeClass("resposta-incorreta");
             $("#D3").removeClass("resposta-incorreta");
             $("#E3").removeClass("resposta-incorreta");
         } else if (value === "D3") {
-            $("#A3").removeClass("resposta-correta");
-            $("#B3").removeClass("resposta-incorreta");
+            $("#A3").removeClass("resposta-incorreta");
+            $("#B3").removeClass("resposta-correta");
             $("#C3").removeClass("resposta-incorreta");
             $("#D3").addClass("resposta-incorreta");
             $("#E3").removeClass("resposta-incorreta");
         } else if (value === "E3") {
-            $("#A3").removeClass("resposta-correta");
-            $("#B3").removeClass("resposta-incorreta");
+            $("#A3").removeClass("resposta-incorreta");
+            $("#B3").removeClass("resposta-correta");
             $("#C3").removeClass("resposta-incorreta");
             $("#D3").removeClass("resposta-incorreta");
             $("#E3").addClass("resposta-incorreta");
         }
 
         var mensagem = "";
-
-        if (resposta3 == value) {
-            mensagem = "Correta. CLIA: Usado para triagem inicial devido à sua alta sensibilidade e especificidade."
-        } else if (value == "B3") {
-            mensagem = "Falsa. Western Blot: Usado para confirmação, não como método inicial de triagem."
-        } else if (value == "C3") {
-            mensagem = "Falsa. PCR: É utilizado para detectar material genético viral, não para a triagem inicial de anticorpos."
-        } else if (value == "D3") {
-            mensagem = "Falsa. Hibridização in situ: Não é usada para triagem de anticorpos."
-        } else if (value == "E3") {
-            mensagem = "Falsa. Ensaio de Linha: Usado para confirmação, não como método inicial de triagem."
-        }
-
+        resposta3 == value ? mensagem = "Triagem CLIA positiva sugere a presença de anticorpos contra HTLV. No entanto, a ausência de reatividade no Western Blotting indica que não foram detectadas as proteínas virais específicas associadas ao HTLV. Portanto, a interpretação final é negativa para HTLV, pois o Western Blotting não confirmou a presença do vírus e o resultado do CLIA é considerado falso positivo."
+            : mensagem = "Resposta incorreta.";
         $("#mensagem3").html(mensagem);
     } else {
         // esvazia a div de mensagem
