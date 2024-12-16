@@ -135,7 +135,7 @@ header {
 }
 
 .botaoAvaliacao {
-    background-color: #357B4B;
+    background-color: #17A1C2;
 }
 
 .botaoMatricula {
@@ -526,11 +526,9 @@ p.download {
 }
 
 /* Formatação de Fontes*/
-/* h1,
-h2,
 h3 {
     color: #7F0C21;
-} */
+} 
 
 h1,
 h2,
@@ -743,7 +741,7 @@ ol li::marker {
     content: '\f061';
     font-weight: 900;
     margin-right: 15px;
-    color: #7F0C21;
+    color: #35637F;
 }
 
 .icon.checkmark::before {
@@ -1533,7 +1531,7 @@ input[type="radio"] {
     margin-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 25px;
-    background-color: #357B4B;
+    background-color: #7F0C21;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1563,6 +1561,8 @@ input[type="radio"] {
     z-index: 2;
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
+    text-transform: uppercase;
+    padding: 24px;
 }
 
 .back {
