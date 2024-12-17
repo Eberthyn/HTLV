@@ -15,7 +15,8 @@ footer {
     letter-spacing: 1px;
 }
 
-.imagem, .video {
+.imagem,
+.video {
     line-height: 1.2;
 }
 
@@ -128,6 +129,15 @@ header {
     align-items: center;
     justify-content: center;
     margin: 50px 15px 0px 0px;
+}
+
+.botaoMenuHome {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+    }
 }
 
 .botoesEncerramento {
@@ -532,7 +542,7 @@ p.download {
 /* Formatação de Fontes*/
 h3 {
     color: #7F0C21;
-} 
+}
 
 h1,
 h2,
